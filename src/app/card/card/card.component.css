@@ -2,3 +2,16 @@ img {
   height: 150px;
   width: 150px;
 }
+.text {
+  font-size: 1.5rem;
+
+}
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.green {
+  color: green;
+}

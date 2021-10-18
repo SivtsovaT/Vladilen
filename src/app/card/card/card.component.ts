@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   title = `name`;
-  number = 42;
-  array = [1, 1, 2, 3, 8, 46];
-  obj = {name: 'Tania', age: 36, love: {name: 'Ed', age: 49} }
+  text = `This is my text`;
+  textColor = `string`;
+
   getInfo() {
     return `This is my info`
   }
@@ -24,6 +24,10 @@ disabled = false;
       this.imgUrl = 'https://vuejs.org/images/logo.png';
       this.disabled = true;
     }, 2000)
+  }
+
+  changeHandler() {
+    console.log(this.title);
   }
 
 }
