@@ -6,6 +6,7 @@ import { CardComponent } from './card/card/card.component';
 import { TodosComponent } from './todos/todos.component';
 import {HttpClientModule} from "@angular/common/http";
 import { TodoFormComponent } from './todo-form/todo-form.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { TodoFormComponent } from './todo-form/todo-form.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
