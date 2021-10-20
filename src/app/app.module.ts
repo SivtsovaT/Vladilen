@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card/card.component';
 import { TodosComponent } from './todos/todos.component';
 import {HttpClientModule} from "@angular/common/http";
+import { TodoFormComponent } from './todo-form/todo-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    TodosComponent
+    TodosComponent,
+    TodoFormComponent
   ],
   imports: [
     BrowserModule,
