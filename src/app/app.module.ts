@@ -1,27 +1,27 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { CardComponent } from './card/card/card.component';
-import { TodosComponent } from './todos/todos.component';
-import {HttpClientModule} from "@angular/common/http";
-import { TodoFormComponent } from './todo-form/todo-form.component';
-import {FormsModule} from "@angular/forms";
+import {AppComponent} from './app.component';
+import {TodosComponent} from './todos/todos.component';
+import {HttpClientModule} from '@angular/common/http';
+import {TodoFormComponent} from './todo-form/todo-form.component';
+import {FormsModule} from '@angular/forms';
+import {TodosFilterPipe} from './shared/todos-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
     TodosComponent,
-    TodoFormComponent
+    TodoFormComponent,
+    TodosFilterPipe
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
